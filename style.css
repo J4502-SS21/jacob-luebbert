@@ -37,11 +37,54 @@ h1 {
   font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
-nav {
+.navFlexbox {
   background-color: orange;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+
+.nav1 {
+  display: flex;
+  order: 1;
+  flex-direction: row;
+}
+
+.nav2 {
+  display: flex;
+  order: 2;
+  flex-direction: row;
+}
+
+.nav3 {
+  display: flex;
+  order: 3;
+  flex-direction: row;
 }
 
 h2 {
   background-color: chartreuse;
   font-family: 'Lexend Mega', Helvetica, sans-serif;
 }
+
+@media (max-width: 500px) {
+  ul {
+    flex-direction: column;
+  }
