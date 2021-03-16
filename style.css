@@ -84,7 +84,7 @@ h2 {
   font-family: 'Lexend Mega', Helvetica, sans-serif;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   ul {
     flex-direction: column;
   }
